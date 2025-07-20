@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Home from "./components/Home";
 
 function App() {
@@ -16,9 +17,9 @@ function App() {
         <div className="col-md-2">
           <nav>
             <div className="list-group">
-              <a href="#!" className="list-group-item list-group-item-action">Home</a>
-              <a href="#!" className="list-group-item list-group-item-action">Movies</a>
-              <a href="#!" className="list-group-item list-group-item-action">Genres</a>
+              <a href="/" className="list-group-item list-group-item-action">Home</a>
+              <a href="/movies" className="list-group-item list-group-item-action">Movies</a>
+              <a href="/genres" className="list-group-item list-group-item-action">Genres</a>
               <a href="#!" className="list-group-item list-group-item-action">Add Movie</a>
               <a href="#!" className="list-group-item list-group-item-action">Manage Catalog</a>
               <a href="#!" className="list-group-item list-group-item-action">GraphQL</a>
@@ -26,7 +27,7 @@ function App() {
           </nav>
         </div>
         <div className="col-md-10">
-          <Home />
+          <Outlet />
         </div>
       </div>
     </div>
