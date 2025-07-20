@@ -5,10 +5,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from './components/ErrorPage';
 import Home from './components/Home';
 import Movies from './components/Movies';
-// import Genres from './components/Genres';
-// import AddMovie from './components/AddMovie';
-// import ManageCatalog from './components/ManageCatalog';
-// import GraphQL from './components/GraphQL';
+import Genres from './components/Genres';
+import Movie from './components/Movie';
+import ManageCatalog from './components/ManageCatalog';
+import GraphQL from './components/GraphQL';
+import Login from './components/Login';
 
 const router = createBrowserRouter([
   {
@@ -24,22 +25,26 @@ const router = createBrowserRouter([
         path: 'movies',
         element: <Movies />,
       },
-      // {
-      //   path: 'genres',
-      //   element: <Genres />,
-      // },
-      // {
-      //   path: 'add-movie',
-      //   element: <AddMovie />,
-      // },
-      // {
-      //   path: 'manage-catalog',
-      //   element: <ManageCatalog />,
-      // },
-      // {
-      //   path: 'graphql',
-      //   element: <GraphQL />,
-      // },
+      {
+        path: 'genres',
+        element: <Genres />,
+      },
+      {
+        path: 'admin/movie/0',
+        element: <Movie />,
+      },
+      {
+        path: 'manage-catalog',
+        element: <ManageCatalog />,
+      },
+      {
+        path: 'graphql',
+        element: <GraphQL />,
+      },
+      {
+        path: 'login',
+        element: <Login />,
+      },
     ],
   },
 ]);
