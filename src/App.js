@@ -26,7 +26,7 @@ function App() {
               <span className="badge bg-primary">Login</span>
             </Link>
           ) : (
-            <a href="/logout" onClick={logOut} className="badge bg-secondary">
+            <a href="/#!" onClick={logOut} className="badge bg-secondary">
               Logout
             </a>
           )}
